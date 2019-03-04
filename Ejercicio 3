@@ -6,10 +6,10 @@ dydt= exp(2*y) *sin(t);
 end
 
 %Call Ejerciciotres
-function [t,y]=call_ejerciciotres()
+function [t,y]=cejerciciotres()
 tspan=[0 10];
-y(0)=0;
-[t,y]=ode45(@ejerciciotres,tspan,y(0));
+y0=0;
+[t,y]=ode45(@ejerciciotres,tspan,y0);
 end
 
 %COMMAND WINDOW
