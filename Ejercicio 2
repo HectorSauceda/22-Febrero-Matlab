@@ -1,0 +1,17 @@
+%Hector Hugo Sauceda Salcido 1614726
+
+%Ejerciciodos
+function dydt = ejerciciodos(t,y)
+dy/dt = a*y - a*y^2;
+end
+
+%call_ejerciciodos
+function [t,y]=call_ejerciciodos()
+tspan=[0,10];
+y(0)=10;
+[t,y]=ode45(@ejerciciodos,tspan,y(0));
+end
+
+%COMMAND WINDOW
+[t,y]=call_ejercicidos();
+plot(t,y)
