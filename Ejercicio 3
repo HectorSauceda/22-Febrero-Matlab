@@ -1,0 +1,17 @@
+%Hector Hugo Sauceda Salcido 1614726
+
+%Ejerciciotres
+function dydt = ejerciciotres(t,y)
+dydt= exp(2*y) *sin(t);
+end
+
+%Call Ejerciciotres
+function [t,y]=call_ejerciciotres()
+tspan=[0 10];
+y(0)=0;
+[t,y]=ode45(@ejerciciotres,tspan,y(0));
+end
+
+%COMMAND WINDOW
+[t,y]=call_ejerciciouno();
+plot(t,y)
