@@ -6,7 +6,7 @@ dydt = t/y;
 end
 
 %call_ejerciciouno
-function [t,y]=call_ejerciciouno()
+function [t,y]=cejerciciouno()
 tspan=[0,10];
 y0=1;
 [t,y]=ode45(@ejerciciouno,tspan,y0);
@@ -14,5 +14,5 @@ end
 
 %COMMAND WINDOW
 
-[t,y]=call_ejerciciouno();
+[t,y]=cejerciciouno();
 plot(t,y)
