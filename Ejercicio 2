@@ -15,5 +15,5 @@ y0=10;
 end
 
 %COMMAND WINDOW
-[t,y]=call_ejercicidos();
+[t,y]=cejercicidos();
 plot(t,y)
