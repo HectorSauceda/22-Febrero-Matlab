@@ -13,5 +13,5 @@ y0=0;
 end
 
 %COMMAND WINDOW
-[t,y]=call_ejerciciouno();
+[t,y]=cejerciciouno();
 plot(t,y)
